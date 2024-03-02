@@ -17,7 +17,7 @@ export default function Profile() {
   const handleForm = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:7001/api/user/profile", {
+      const res = await fetch("https://crudtest-back.vercel.app/api/user/profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
