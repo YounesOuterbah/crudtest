@@ -12,7 +12,7 @@ app.use(cookieParser());
 connectDB();
 
 const corsOptions = {
-  origin: "http://localhost:5173", // Specify your frontend origin
+  origin: "https://crudtest-sigma.vercel.app", // Specify your frontend origin
   credentials: true, // Allow credentials (cookies)
 };
 
