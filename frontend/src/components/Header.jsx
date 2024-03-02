@@ -6,11 +6,11 @@ export default function Header() {
 
   return (
     <div className="py-2 bg-red-400 text-white font-bold ">
-      <div className="container flex items-center justify-between">
+      <div className="container flex flex-col md:flex-row items-center justify-between">
         <Link to="/" className="text-4xl">
           موقع المحنكين
         </Link>
-        <ul className="flex gap-2 text-2xl">
+        <ul className="flex gap-2 text-xl md:text-2xl">
           {userInfo?.name == null ? (
             <>
               <Link to="/login" className="duration-300 hover:text-blue-800 cursor-pointer">
