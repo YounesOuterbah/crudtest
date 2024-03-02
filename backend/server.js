@@ -16,6 +16,10 @@ const corsOptions = {
   credentials: true, // Allow credentials (cookies)
 };
 
+app.get("/hi",(req,res)=>{
+  res.json({msg:"hello from server"})
+})
+
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/api/user", userRoutes);
