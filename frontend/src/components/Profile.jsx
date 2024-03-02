@@ -17,7 +17,7 @@ export default function Profile() {
   const handleForm = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://crudtest-back.vercel.app/api/user/profile", {
+      const res = await fetch("https://crudtest-1.onrender.com/api/user/profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ export default function Profile() {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch("https://crudtest-back.vercel.app/api/user/logout", {
+      const res = await fetch("https://crudtest-1.onrender.com/api/user/logout", {
         method: "POST",
         credentials: "include",
       });
