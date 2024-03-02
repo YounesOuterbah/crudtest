@@ -17,7 +17,7 @@ export default function Register() {
 
     const information = { name, email, password };
     try {
-      const res = await fetch("http://localhost:7001/api/user/", {
+      const res = await fetch("https://crudtest-back.vercel.app/api/user/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(information),
