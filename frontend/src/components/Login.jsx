@@ -30,7 +30,7 @@ export default function Login() {
     };
 
     try {
-      const res = await fetch("https://crudtest-back.vercel.app/api/user/login/", {
+      const res = await fetch("https://crudtest-1.onrender.com/api/user/login/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(information),
