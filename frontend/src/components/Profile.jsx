@@ -35,7 +35,7 @@ export default function Profile() {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:7001/api/user/logout", {
+      const res = await fetch("https://crudtest-back.vercel.app/api/user/logout", {
         method: "POST",
         credentials: "include",
       });
